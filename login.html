@@ -6,30 +6,16 @@
   </head>
   <body>
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
-    <header>
-      <nav>
-        <a href="index.html">
-          <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
-        </a>
-        <ul>
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="news.hhml">Новости</a></li>
-          <li><a href="price.html">Прайс-лист</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
     <main>
-        <h1>Вход в личный кабинет</h1>
+        <h2>Вход в личный кабинет</h2>
         <p>Введите пожалуйста свой логин и пароль</p>
         <form action="https://echo.htmlacademy.ru" method="post">
             <p>
-                <label for="user_login">Логин</label>
+                <label class="visually-hidden" for="user_login">Логин</label>
                 <input type="text" id="user_login" name="login" placeholder="логин" required>
             </p>
             <p>
-                <label for="user_password">Пароль</label>
+                <label class="visually-hidden" for="user_password">Пароль</label>
                 <input type="password" id="user_password" name="password" placeholder="пароль" required>
             </p>
             <p>
