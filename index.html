@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
@@ -20,9 +23,7 @@
         </ul>
         <ul>
           <li>
-            <a href="login.html">
-              Вход
-            </a> 
+            <a href="login.html">Вход</a>
           </li>
         </ul>
       </nav>
@@ -33,7 +34,7 @@
         <ul>
           <li>
             <h3>Быстро</h3>
-            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>            
+            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
           </li>
           <li>
             <h3>Круто</h3>
@@ -106,7 +107,7 @@
           </p>
           <button type="submit">
             Отправить
-          </button>      
+          </button>
         </form>
       </section>
     </main>
@@ -130,5 +131,32 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss/">HTML Academy</a>
       </p>
     </footer>
+    <section>
+      <h2>Вход в личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user_login">Логин</label>
+          <input type="text" id="user_login" name="login" placeholder="логин" required>
+        </p>
+        <p>
+          <label class="visually-hidden" for="user_password">Пароль</label>
+          <input type="password" id="user_password" name="password" placeholder="пароль" required>
+        </p>
+        <p>
+          <label><input type="checkbox" name="remember_me">Запомните меня</label>
+          <a href="#">Я забыл пароль!</a>
+        </p>
+        <button type="submit">Войти</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Как проехать:</h2>
+      <p>
+        <img src="img/map.png" width="780" height="574" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button type="button">Закрыть</button>
+  </section>
   </body>
 </html>
